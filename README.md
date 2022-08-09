@@ -9,3 +9,6 @@ React, Firebase, and Material UI
 ### To Do App Guides
 https://blog.logrocket.com/build-crud-application-react-firebase-web-sdk-v9/
 https://www.freakyjolly.com/react-firebase-materialui-todo-app-tutorial/
+
+### Git cheats
+https://stackabuse.com/git-merge-branch-into-master/
