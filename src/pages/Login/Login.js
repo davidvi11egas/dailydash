@@ -1,9 +1,12 @@
+import "./Login.css";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Form, Alert } from "react-bootstrap";
-import { Button } from "react-bootstrap";
+// import { Form, Alert } from "react-bootstrap";
+import Form from "react-bootstrap/Form";
+import Alert from "react-bootstrap/Alert";
+import Button from "react-bootstrap/Button";
 import GoogleButton from "react-google-button";
-import { useUserAuth } from "../context/userAuthContext";
+import { useUserAuth } from "../../context/userAuthContext";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -34,8 +37,8 @@ const Login = () => {
 
   return (
     <>
-      <div className="p-4 box">
-        <h2 className="mb-3">Firebase Auth Login</h2>
+      <div className="loginBox p-4 box">
+        <h2 className="mb-3">Daily Dash</h2>
         {error && <Alert variant="danger">{error}</Alert>}
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -68,10 +71,20 @@ const Login = () => {
             onClick={handleGoogleSignIn}
           />
         </div>
+        <div className="p-1 mt-4 text-center">
+          Don't have an account? <Link to="/signup">Sign up</Link>
+        </div>
       </div>
-      <div className="p-4 box mt-3 text-center">
-        Don't have an account? <Link to="/signup">Sign up</Link>
-      </div>
+
+
+      {/* <div className="text-center">
+      {'© Copyright '}
+      <a color="inherit" href="https://davidvllgs.com/">
+        David Villegas
+      </a>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </div> */}
     </>
   );
 };
