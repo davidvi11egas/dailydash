@@ -3,6 +3,8 @@ import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router";
 import { useUserAuth } from "../../context/userAuthContext";
 
+import TaskManager from '../../components/TaskManager';
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -24,6 +26,7 @@ const Home = () => {
       <Container fluid className="home">
       <Row>
         <h1>Daily Dash</h1>
+        <TaskManager/>
       </Row>
         <Row>
           <Col>

@@ -4,7 +4,6 @@ import { Routes, Route } from "react-router-dom";
 import { UserAuthContextProvider } from "./context/userAuthContext";
 import ProtectedRoute from "./context/ProtectedRoute";
 // components
-
 // pages
 import Home from "./pages/Home";
 import Login from "./pages/Login";
