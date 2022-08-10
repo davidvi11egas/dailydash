@@ -1,15 +1,6 @@
 .loginBox {
-    background-color: #fafafa;
-    /* display: flex; */
-    /* justify-content: center; */
-    align-content: center;
-    width: 20%;
-    /* align-items: center; */
-    height: 40%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-    margin-top: 200px;
+    background-color: #fff;
+    width: 100%;
 }
 
 .box {
