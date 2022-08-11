@@ -11,16 +11,15 @@ import Signup from "./pages/Signup";
 
 function App() {
   return (
-      <Container fluid>
-        <UserAuthContextProvider>
-      <Routes>
-        <Route path="/home" element={<ProtectedRoute><Home/></ProtectedRoute>}/>
-        <Route path="/" element={<Login/>}/>
-        <Route path="/signup" element={<Signup/>}/>
-      </Routes>
-    </UserAuthContextProvider>
+    <Container fluid className="p-0">
+      <UserAuthContextProvider>
+        <Routes>
+          <Route path="/home" element={<ProtectedRoute><Home /></ProtectedRoute>} />
+          <Route path="/" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+        </Routes>
+      </UserAuthContextProvider>
     </Container>
-
   );
 }
 

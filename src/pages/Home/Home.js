@@ -3,7 +3,8 @@ import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router";
 import { useUserAuth } from "../../context/userAuthContext";
 
-import TaskManager from '../../components/TaskManager/TaskManager';
+import Navbar from "../../components/Navbar/Navbar"
+import TaskManager from "../../components/TaskManager/TaskManager";
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -23,9 +24,10 @@ const Home = () => {
 
   return (
 
-      <Container fluid className="home">
+      <div>
+      <Navbar/>
       <Row>
-        <h1>Daily Dash</h1>
+        <h1>Dashboard</h1>
         <TaskManager/>
       </Row>
         <Row>
@@ -41,7 +43,7 @@ const Home = () => {
 
           </Col>
         </Row>
-      </Container>
+      </div>
   
   );
 };
