@@ -2,7 +2,7 @@ import Modal from "./Modal"
 import {useState} from 'react'
 import './editTask.css'
 import { doc, updateDoc } from "firebase/firestore";
-import {db} from "../firebase-config";
+import {db} from "../../firebase-config";
 
 function EditTask({open, onClose, toEditTitle, toEditDescription, id}) {
 

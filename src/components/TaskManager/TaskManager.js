@@ -2,7 +2,7 @@ import './taskManager.css';
 import Task from './Task';
 import {useState, useEffect} from 'react';
 import {collection, query, orderBy, onSnapshot} from "firebase/firestore";
-import {db} from "../firebase-config";
+import {db} from "../../firebase-config";
 import AddTask from './AddTask';
 
 function TaskManager() {

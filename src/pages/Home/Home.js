@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router";
 import { useUserAuth } from "../../context/userAuthContext";
 
-import TaskManager from '../../components/TaskManager';
+import TaskManager from '../../components/TaskManager/TaskManager';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
